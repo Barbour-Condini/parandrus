@@ -274,10 +274,8 @@ html {
 
 /* CONTACT */
 #contact-image {
-    max-width: 300px;
+    max-width: 270px;
     min-width: 20%;
-    text-align: center;
-    margin: auto;
     margin-bottom: 30px;
 }
 
