@@ -1,0 +1,285 @@
+body {
+    color: #546E7A;
+    /* old color:  rgb(134,163,191)*/
+    text-align: center;
+    display: block;
+    margin: auto;
+    font-size: auto;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+#home-image {
+    max-width: 80%;
+    width: 1000px;
+    display: block;
+    margin: 25px auto;
+}
+
+h1, h2, h3 {
+    display: block;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    color: rgb(134,163,191);
+    margin-top: 50px;
+}
+
+ul#nav {
+    list-style-type:    none;
+    padding:            0px;
+    margin:             0px;
+    margin-bottom: 20px;
+}
+
+ul#nav li {
+    display:            inline;
+    padding:            0px 10px;
+}
+
+ul#nav li a:link, ul#nav li a:visited {
+    text-decoration:    none;
+    color: #546E7A;
+    line-height:        30px;
+    justify-content:    space-evenly;
+}
+
+ul#nav li a:hover, div >a:hover, p >a:hover {
+    color:              rgb(211, 132, 58);
+    transform:          scale(2.05);
+    transition:         0.5s;
+}
+
+a:link {
+    color:              #546E7A;
+    background-color:   transparent;
+    text-decoration:    none;
+}
+
+a:hover {
+    color:              rgb(211, 132, 58);
+    transition:         0.5s;
+    text-decoration:    none;
+}
+
+a:visited {
+    color: #546E7A;
+    text-decoration:    none;
+}
+
+ul#nav > li > a#home, ul#nav > li > a#about, ul#nav > li > a#players, 
+ul#nav > li >a#media, ul#nav > li > a#gallery, ul#nav > li > a#contact {
+    color:               rgb(211, 132, 58);
+}
+
+footer {
+    max-width:  80%;
+    margin:     auto;
+    margin-bottom: 30px;
+    font-size:          0.8em;
+    color: rgb(134,163,191);
+}
+
+
+#social-bar {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;;
+    text-align: center;
+}
+
+.social-icons {
+    padding-left: 5px;
+    width: 30px;
+}
+
+/* ABOUT */
+#about-image {
+    width: 100%;
+}
+
+#about-text {
+    width: 80%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+
+/* MUSICIANS */
+#all-musician-profiles {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.individual-profiles {
+    margin: 60px auto;
+}
+
+.profile-pics {
+    border-radius: 50%;
+}
+
+#Charlotte-pic:hover, #Grace-pic:hover {
+    transform:          scale(1.05);
+    transition:         0.5s ease-in; /*gen guidance - use ease-in when element's expanding, ease-out when it's contracting */
+    transition-delay:   none;
+    transition-property: all; 
+}
+
+/* MEDIA */
+
+/* make the thumbnail positioning responsive with flexbox */
+#all-media {
+    display:        flex;
+    flex-wrap:      wrap;
+    justify-content: space-evenly;
+    margin:         0px auto;
+    max-width:      90%;
+    width: 80%;
+}
+
+.media-clip {
+    padding:        20px 10px;
+    border-radius:  15px;
+    border-style:   none;
+    margin:         auto;
+    max-width:      95%;
+}
+
+#extra-media {
+    width: 80%;
+    margin: auto;
+}
+
+/* GALLERY */
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+}
+  
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+  
+  
+/* Container for image text */
+#caption-container {
+    text-align:     center;
+    max-width:      80%;
+    margin:         2px auto 10px auto;
+}
+  
+/* applies to text element, in this case a p tag 
+    removes top space btwn image and caption*/
+#caption {
+    margin-top:     0;
+    font-size:      70%;
+    font-style:     italic;
+}
+  
+  
+.row:after {
+    content:    "";
+    display:    table;
+    clear:      both;
+}
+  
+/* enlarge slightly and add transparency effect on thumbnail hover */
+.active,
+.demo:hover,
+.scroll-anchor:hover {
+    opacity:            0.7;
+    transform:          scale(1.02);
+    transition:         0.5s ease-in; /*gen guidance - use ease-in when element's expanding, ease-out when it's contracting */
+    transition-delay:   none;
+    transition-property: all; 
+}
+  
+/* make the thumbnail positioning responsive with flexbox */
+.flex-container {
+    display:            flex;
+    flex-wrap:          wrap;
+    justify-content:    space-evenly;
+    margin:             0px 20px;
+}
+  
+  
+/* control thumbnail image size */
+.demo {
+  padding:          10px;
+  border-radius:    15px;
+  max-height:       300px;
+  max-width:        90%;
+}
+  
+/* control slideshow image size */
+  
+.slidesSize {
+    max-height:         500px; 
+    margin:             10px auto 0 auto; 
+    display:            block;
+    max-width:          80%;
+}
+  
+/* scroll to top */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+#nav-buttons {
+  cursor:               pointer;
+  position:             static;
+  top:                  20%;
+  text-align:           center;
+  padding-top:          40px;
+  color:                #546E7A;
+  font-weight:          bold;
+  font-size:            20px;
+  border-radius:        0 3px 3px 0;
+  user-select:          none;
+  -webkit-user-select:  none;
+  background-color:     transparent;
+  display:              none;
+}
+  
+#prev, #next {
+    padding-left:       30px;
+    padding-right:      30px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 1;
+}
+
+/* CONTACT */
+#contact-image {
+    max-width: 300px;
+    min-width: 20%;
+    margin-bottom: 30px;
+}
+
+.contact-text {
+    width: 80%;
+    margin: auto;
+}

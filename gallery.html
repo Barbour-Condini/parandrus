@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="icon" href="images/thumbnails/BRV3.jpg">
+    <script src="gallery.js"></script>
+    <title>Parandrus: Gallery</title>
+</head>
+<body id='gallery'>
+    <header>
+        <h1>PARANDRUS</h1>
+    </header>
+    <div id='social-bar'>
+        <a href="https://www.facebook.com/parandrusconsort/" target='blank'><img class='social-icons' src="images/sm-icons/fb-blue.png" alt="facebook link"></a>
+        <a href="https://www.instagram.com/parandrusconsort/?hl=en" target='blank'><img class='social-icons' src="images/sm-icons/insta-blue.png" alt="instagram link"></a>
+        <a href="https://www.youtube.com/channel/UCZDCupXS1xJYCfeyV37eJow" target='blank'><img class='social-icons' src="images/sm-icons/yt-blue.png" alt="youtube link"></a>
+        <a href="https://soundcloud.com/parandrusconsort" target='blank'><img class='social-icons' src="images/sm-icons/sc-blue.png" alt="soundcloud link"></a>
+    </div>
+
+    <nav>
+        <ul id="nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="players.html">PLAYERS</a></li>
+            <li><a href="media.html">MEDIA</a></li>
+            <li><a id='gallery' href="gallery.html">GALLERY</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- Next and previous buttons -->
+    <div id='nav-buttons'>
+        <a id="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a id="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- Container for the image gallery -->
+    <div class="container">
+
+    <!-- Full-width images -->
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/BRV3.jpg' alt='Parandrus, cred. Benny Vernon'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/recording.jpg' alt='2019 recording session'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/YH4.jpg' alt='ORDA 2019, cred. Yat Ho'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/ORDA19-stairs.jpg' alt='ORDA 2019'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/Durham.jpg' alt='Parandrus at Ushaw College, Durham (2019)'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/consort.jpg' alt='Adrian Brown Recorder consort'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/SJSS.jpg' alt='Parandrus at St John&apos;s Smith Square, 2019'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/percival.jpg' alt='Percival the Parandrus'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/YH2.jpg' alt='ORDA 2019, cred. Yat Ho'>
+    </div>
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/BRV1.jpg' alt='Parandrus, cred. Benny Vernon'>
+    </div>    
+
+    <div class='mySlides'>
+        <img class='slidesSize' src='images/gallery/BRV4.jpg' alt='Parandrus, cred. Benny Vernon'>
+    </div> 
+
+    <!-- Image text -->
+    <div id="caption-container">
+        <p id="caption"></p>
+    </div>
+
+    <!-- Thumbnail images -->
+        <a href='#top' class="scroll-anchor"><img id='tn1' class="demo cursor"
+            src="images/thumbnails/BRV3.jpg" onclick="currentSlide(1)"
+            alt="Parandrus, cred. Benny Rex Vernon"></a>
+
+        <a href='#top' class="scroll-anchor"><img id='tn2' class="demo cursor"
+            src="images/thumbnails/recording.jpg" onclick="currentSlide(2)"
+            alt="Parandrus Recording session, 2019"></a>
+
+        <a href='#top' class="scroll-anchor"><img id='tn3' class="demo cursor"
+            src="images/thumbnails/YH4.jpg" onclick="currentSlide(3)"
+            alt="Parandrus, ORDA 2019 cred. Yat Ho"></a>
+        
+        <a href='#top' class="scroll-anchor"><img id='tn4' class="demo cursor"
+            src="images/thumbnails/ORDA19-stairs.jpg" onclick="currentSlide(4)"
+            alt="Parandrus, ORDA 2019"></a>
+
+        <a href='#top' class="scroll-anchor"><img id='tn5' class="demo cursor"
+            src="images/thumbnails/Durham.jpg" onclick="currentSlide(5)"
+            alt="Parandrus at Ushaw College, Durham (2019)"></a>
+
+        <a href='#top' class="scroll-anchor"><img id='tn6' class="demo cursor"
+            src="images/thumbnails/consort.jpg" onclick="currentSlide(6)"
+            alt="Recorder consort made by Adrian Brown"></a>
+        
+        <a href='#top' class="scroll-anchor"><img id='tn7' class="demo cursor"
+            src="images/thumbnails/SJSS.jpg" onclick="currentSlide(7)"
+            alt="Parandrus at St John&apos;s Smith Square, 2019"></a>
+        
+        <a href='#top' class="scroll-anchor"><img id='tn8' class="demo cursor"
+            src="images/thumbnails/percival.jpg" onclick="currentSlide(8)"
+            alt="Percival the Parandrus"></a>
+    
+        <a href='#top' class="scroll-anchor"><img id='tn9' class="demo cursor"
+            src="images/thumbnails/YH2.jpg" onclick="currentSlide(9)"
+            alt="Parandrus, ORDA 2019 cred. Yat Ho"></a>
+        
+        <a href='#top' class="scroll-anchor"><img id='tn10' class="demo cursor"
+            src="images/thumbnails/BRV1.jpg" onclick="currentSlide(10)"
+            alt="Parandrus, cred. Benny Rex Vernon"></a>
+        
+        <a href='#top' class="scroll-anchor"><img id='tn11' class="demo cursor"
+            src="images/thumbnails/BRV4.jpg" onclick="currentSlide(11)"
+            alt="Parandrus, cred. Benny Rex Vernon"></a>
+
+    </div>
+    
+    <footer>
+        &copy; 2021, Parandrus. All rights reserved. <br>
+        Photo credits include: Benny Vernon; Yat Ho; John Illingworth
+    </footer>
+</body>
+</html>
