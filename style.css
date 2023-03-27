@@ -124,7 +124,7 @@ footer {
     border-radius: 50%;
 }
 
-#Charlotte-pic:hover, #Grace-pic:hover {
+#Charlotte-pic:hover, #Grace-pic:hover, #Daniel-pic:hover {
     transform:          scale(1.05);
     transition:         0.5s ease-in; /*gen guidance - use ease-in when element's expanding, ease-out when it's contracting */
     transition-delay:   none;
